@@ -1,0 +1,141 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>IBETHEL AGEIB | Imprimerie et Communication Visuelle</title>
+  <meta name="description" content="IBETHEL AGEIB accompagne vos besoins en impression, signalétique et objets publicitaires avec des solutions sur mesure." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Sora:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/assets/style.css" />
+  <script defer src="/assets/java.js"></script>
+</head>
+<body>
+  <div class="bg-shape bg-shape-1" aria-hidden="true"></div>
+  <div class="bg-shape bg-shape-2" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#accueil" class="brand">IBETHEL <span>AGEIB</span></a>
+      <button class="menu-toggle" type="button" aria-label="Ouvrir le menu">☰</button>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="#accueil">Accueil</a></li>
+          <li><a href="#apropos">À propos</a></li>
+          <li><a href="#activites">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="accueil">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Imprimerie & communication visuelle</p>
+          <h1>Votre image mérite un support qui marque les esprits.</h1>
+          <p>
+            IBETHEL AGEIB conçoit et produit vos supports de communication: du flyer à l'enseigne,
+            avec un suivi de qualité, des délais maitrisés et un accompagnement personnalisé.
+          </p>
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary">Demander un devis</a>
+            <a href="#activites" class="btn btn-ghost">Voir nos services</a>
+          </div>
+        </div>
+        <div class="hero-media reveal" aria-label="Zone logo de marque">
+          <img class="hero-logo" src="../img/logo-ibethel.svg" alt="Logo de la marque IBETHEL AGEIB" />
+          <div class="hero-fallback" aria-hidden="true">
+            <p>IBETHEL</p>
+            <span>AGEIB</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="apropos">
+      <div class="container reveal">
+        <p class="section-tag">Qui sommes-nous</p>
+        <h2>Un partenaire local pour vos projets de visibilité</h2>
+        <p class="section-text">
+          Nous aidons entreprises, associations et institutions à produire des supports professionnels
+          qui reflètent leur identité. Notre approche combine conseil, exécution soignée et solutions adaptées
+          à votre budget.
+        </p>
+      </div>
+    </section>
+
+    <section class="section" id="activites">
+      <div class="container">
+        <p class="section-tag reveal">Nos services</p>
+        <h2 class="reveal">Des prestations complètes pour votre communication</h2>
+        <div class="cards">
+          <article class="card reveal">
+            <h3>Impression papier</h3>
+            <p>Flyers, brochures, dépliants, cartes et documents commerciaux.</p>
+          </article>
+          <article class="card reveal">
+            <h3>Grand format</h3>
+            <p>Affiches, bâches, banderoles et supports événementiels visibles.</p>
+          </article>
+          <article class="card reveal">
+            <h3>Signalétique</h3>
+            <p>Enseignes, panneaux et habillage pour renforcer votre présence.</p>
+          </article>
+          <article class="card reveal">
+            <h3>PLV & stands</h3>
+            <p>Supports de vente et aménagement de stand pour vos opérations.</p>
+          </article>
+          <article class="card reveal">
+            <h3>Objets publicitaires</h3>
+            <p>Produits personnalisés pour fidéliser et valoriser votre marque.</p>
+          </article>
+          <article class="card reveal">
+            <h3>Accompagnement</h3>
+            <p>Devis personnalisés, échantillons et suivi de production.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-contact" id="contact">
+      <div class="container contact-grid">
+        <div class="contact-info reveal">
+          <p class="section-tag">Contact</p>
+          <h2>Discutons de votre prochain projet</h2>
+          <p>Téléphone: <a href="tel:+225010531619456">01 05 31 61 94 56</a></p>
+          <p>Horaires: du lundi au vendredi, 8h30 à 18h30</p>
+          <p>Email: <a href="mailto:contact@ibethel-ageib.example">contact@ibethel-ageib.example</a></p>
+          <p>Adresse: à compléter selon votre localisation</p>
+        </div>
+
+        <form class="contact-form reveal" id="contact-form" action="/api/contact" method="post">
+          <label for="name">Nom</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <input class="hp-field" type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" />
+          <input type="hidden" name="_subject" value="Nouveau message depuis le site IBETHEL AGEIB" />
+
+          <button type="submit" class="btn btn-primary">Envoyer</button>
+          <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2026 IBETHEL AGEIB. Tous droits réservés.</p>
+    </div>
+  </footer>
+</body>
+</html>
+

@@ -1,0 +1,26 @@
+{
+  "version": 2,
+  "functions": {
+    "api/**/*.js": {
+      "runtime": "nodejs20.x"
+    }
+  },
+  "routes": [
+    {
+      "src": "/api/contact",
+      "dest": "/api/contact.js"
+    },
+    {
+      "src": "/img/(.*)",
+      "dest": "/img/$1"
+    },
+    {
+      "src": "/assets/(.*)",
+      "dest": "/assets/$1"
+    },
+    {
+      "src": "/",
+      "dest": "/assets/index.html"
+    }
+  ]
+}
