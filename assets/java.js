@@ -21,22 +21,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  const heroMedia = document.querySelector('.hero-media');
-  const heroLogo = document.querySelector('.hero-logo');
-
-  if (heroMedia && heroLogo) {
-    const logoProbe = new Image();
-    logoProbe.src = heroLogo.src;
-
-    logoProbe.onload = () => {
-      heroMedia.classList.add('logo-ready');
-    };
-
-    logoProbe.onerror = () => {
-      heroMedia.classList.remove('logo-ready');
-    };
-  }
-
   const contactForm = document.querySelector('#contact-form');
   const formStatus = document.querySelector('#form-status');
 
